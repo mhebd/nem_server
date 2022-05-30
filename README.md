@@ -3,7 +3,7 @@
 Create Node-Express server with MongoDB (mongoose) database.
 
 Create NEM server works on macOS, Windows, and Linux.<br>
-If something doesn’t work, please know me quickly
+If something doesn’t work, please [file an issue](https://github.com/mhebd/nem_server/issues/new).<br>
 
 ## Quick Overview
 
