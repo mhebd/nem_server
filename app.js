@@ -1,5 +1,5 @@
 const express = require('express');
-// const dotenv = require('dotenv').config({path: 'config/.env'});
+const dotenv = require('dotenv').config({path: 'config/.env'});
 const morgan = require('morgan');
 const cors = require('cors');
 const database = require('./db/database');
@@ -7,7 +7,7 @@ const error = require('./middleware/error');
 const path = require('path');
 
 // Routers Path
-const helloRouter = require('./route/hello');
+const userRouter = require('./route/user');
 
 // Create Server
 const app = express();
@@ -19,10 +19,10 @@ app.use(express.json())
 // app.use(express.static(path.join(__dirname, '/')))
 
 // Add Database
-// database();
+database();
 
 // Route End Point
-app.use('/api/v1/hello', helloRouter);
+app.use('/api/v1/user', userRouter);
 
 // Show Error Message
 app.use(error);

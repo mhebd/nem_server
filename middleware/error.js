@@ -5,7 +5,7 @@ module.exports = (err, req, res, next) => {
 
 	if(err.code === 11000) {
 		const field = Object.keys(err.keyValue)[0];
-		message = `Duplicate key found on field "" and value "" `;
+		message = `Duplicate key found on field "${field}" and value "${err.keyValue[field]}" `;
 	}
 
 	res.status(status).json({
