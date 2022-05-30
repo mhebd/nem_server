@@ -17,8 +17,7 @@ npm dev or npm start
 
 You **don’t** need to install or configure tools like Express, Bcryptjs, Jsonwebtoken, Mongoose.<br>
 They are already installed so that you can focus on the code.<br>
-Also, You **don’t** need to User Model and Router. It has also created for your.
-
+Also, You **don’t** need to create User Model and Router. It is already created.
 Create a project, and you’re good to go.
 
 ## Creating an Server
