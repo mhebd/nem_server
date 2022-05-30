@@ -19,5 +19,11 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4",
     "morgan": "^1.10.0"
-  }
+  },
+  "keywords": [
+    "node_server",
+    "express-server",
+    "mongoose",
+    "server_app"
+  ]
 }
