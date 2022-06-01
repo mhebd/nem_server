@@ -8,17 +8,25 @@ If something doesn’t work, please [file an issue](https://github.com/mhebd/nem
 ## Quick Overview
 
 ```sh
-npx create-nem-server my-server
-cd my-server
-npm dev or npm start
+npx create_nem_server my_server
+cd my_server
+npm start or yarn start
 ```
 
 ### Get Started Immediately
 
 You **don’t** need to install or configure tools like Express, Bcryptjs, Jsonwebtoken, Mongoose.<br>
 They are already installed so that you can focus on the code.<br>
-Also, You **don’t** need to create User Model and Router. It is already created.
-Create a project, and you’re good to go.
+Also, You **don’t** need to create User Model and Router. It is already created.<br>
+
+**You will need just two things, MongoDB connection string and password. Just copy that and past it on the .env file with this format.**
+
+```sh
+PASSWORD = your_password
+CON_STRING = mongodb+srv://your_name:{&PASSWORD&}@portfolios.s9uuh.mongodb.net/db_name?retryWrites=true&w=majority
+```
+
+And now, you’re good to go.
 
 ## Creating an Server
 
@@ -29,7 +37,7 @@ To create a new server, you may follow the following methods:
 ### npx
 
 ```sh
-npx create-nem-server my-server
+npx create_nem_server my_server
 ```
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
@@ -37,7 +45,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ### Folder Structure
 
 
-It will create a directory called `my-server` inside the current folder.<br>
+It will create a directory called `my_server` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
 
 ```
@@ -66,12 +74,12 @@ No configuration or complicated folder structures, only the files you need to bu
 Once the installation is done, you can open your project folder:
 
 ```sh
-cd my-server
+cd my_server
 ```
 
 Inside the newly created project, you can run some built-in commands:
 
-### `npm start/dev` or `yarn start/dev`
+### `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
