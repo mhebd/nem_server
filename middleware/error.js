@@ -1,3 +1,5 @@
+const Result = require('../util/result')
+
 module.exports = (err, req, res, next) => {
 	err ? console.log(err) : null;
 	let message = err.message || 'SERVER ERROR';
@@ -8,9 +10,15 @@ module.exports = (err, req, res, next) => {
 		message = `Duplicate key found on field "${field}" and value "${err.keyValue[field]}" `;
 	}
 
-	res.status(status).json({
-		success: false,
-		message,
-	});
+	if(err.name == 'ValidationError') {
+		const keys = Object.keys(err.errors);
+		let errmsg = [];
+		keys.forEach(key => {
+			errmsg.push(err.errors[key].message);
+		});
+		message = errmsg.join('& ');
+	}
+
+	res.status(status).json(new Result(false, message, {err}));
 	next();
 };
