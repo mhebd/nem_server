@@ -6,8 +6,8 @@
   "bin": "./bin/cli.js",
   "author": "Md. Mehedi Hassan",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "license": "MIT",
   "repository": {
@@ -23,7 +23,7 @@
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4",
-    "morgan": "^1.10.0"
+    "winston": "^3.8.1"
   },
   "keywords": [
     "server",
@@ -32,5 +32,10 @@
     "express",
     "mongoose",
     "node_app"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "morgan": "^1.10.0",
+    "prettier": "^2.7.1"
+  }
 }
