@@ -1,4 +1,4 @@
-const Result = require('../util/result');
+const { Result } = require('../utility');
 const logger = require('./logger');
 
 module.exports = (err, req, res, next) => {

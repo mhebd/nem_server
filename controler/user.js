@@ -1,10 +1,12 @@
-const asyncHdl = require('../util/asyncHdl');
-const errMsg = require('../util/errMsg');
 const bcrypt = require('bcryptjs');
 const gravatar = require('gravatar');
 const User = require('../model/User');
-const Result = require('../util/result');
-const { findOne, findAll, deleteOne } = require('../util/crudOparetion');
+const {
+	asyncHdl,
+	errMsg,
+	Result,
+	CRUD: { findOne, findAll, deleteOne },
+} = require('../utility');
 
 /**
 	=> @POST

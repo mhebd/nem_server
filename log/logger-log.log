@@ -54,3 +54,36 @@
 [31m  level: 'error',[39m
 [31m  timestamp: '2022-09-01 00:10:14'[39m
 [31m}[39m
+[31m{[39m
+[31m  message: 'Duplicate key found on field "email" and value "hello@hi.in" ',[39m
+[31m  meta: {[39m
+[31m    path: '/api/v1/user/signup',[39m
+[31m    method: 'POST',[39m
+[31m    EUID: '20f01d93f939',[39m
+[31m    status: 500[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '2022-09-01 00:14:02'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'Duplicate key found on field "email" and value "hello@hi.in" ',[39m
+[31m  meta: {[39m
+[31m    path: '/api/v1/user/signup',[39m
+[31m    method: 'POST',[39m
+[31m    EUID: '70c7126204d',[39m
+[31m    status: 500[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '2022-09-01 00:14:22'[39m
+[31m}[39m
+[31m{[39m
+[31m  message: 'Your are not authorized to access this page',
+[31m  meta: {[39m
+[31m    path: '/api/v1/user/user',[39m
+[31m    method: 'GET',[39m
+[31m    EUID: 'e7f9245a970',[39m
+[31m    status: 401[39m
+[31m  },[39m
+[31m  level: 'error',[39m
+[31m  timestamp: '2022-10-17 22:11:52'[39m
+[31m}[39m
