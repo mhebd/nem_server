@@ -1,6 +1,6 @@
 {
 	"name": "create_nem_server",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"description": "This is a backend server (Node, Express & Mongoose) startup project.",
 	"main": "index.js",
 	"bin": "./bin/cli.js",
