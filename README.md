@@ -22,8 +22,10 @@ Also, You **don’t** need to create User Model and Router. It is already create
 **You will need just two things, MongoDB connection string and password. Just copy that and past it on the .env file with this format.**
 
 ```sh
-PASSWORD = your_password
-CON_STRING = mongodb+srv://your_name:{&PASSWORD&}@portfolios.s9uuh.mongodb.net/db_name?retryWrites=true&w=majority
+PORT = 5000
+CON_STRING = your_mongodb_connection_string
+SECRET = some_secret_text
+EXPIRES = token_expires_time || 30d
 ```
 
 And now, you’re good to go.
@@ -40,7 +42,7 @@ To create a new server, you may follow the following methods:
 npx create_nem_server my_server
 ```
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 9+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 ### Folder Structure
 
@@ -49,7 +51,7 @@ It will create a directory called `my_server` inside the current folder.<br>
 Inside that directory, it will generate the initial project structure and install the transitive dependencies:
 
 ```
-my-server
+my_server
 ├── README.md
 ├── app.js
 ├── node_modules

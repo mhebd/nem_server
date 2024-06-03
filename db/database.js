@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports = () => {
-	const STRING = process.env.CON_STRING.replace('{&PASSWORD&}', process.env.PASSWORD);
+	const STRING = process.env.CON_STRING;
 	const config = {
 		useNewUrlParser: true,
 		useUnifiedTopology: true
